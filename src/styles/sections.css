@@ -547,3 +547,143 @@ main {
     transform: translateX(0) scale(1);
   }
 }
+
+.site-footer {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background: #062b70;
+}
+
+.footer-waves {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.wave {
+  position: absolute;
+  left: -6%;
+  right: -6%;
+  height: 180px;
+  border-radius: 50% 50% 0 0;
+  transform-origin: center;
+}
+
+.wave-light {
+  top: -105px;
+  background: #7597ca;
+  transform: rotate(-2deg);
+}
+
+.wave-teal {
+  top: -42px;
+  background: #267884;
+  transform: rotate(-6deg);
+}
+
+.wave-mid {
+  top: 40px;
+  background: #2b4f90;
+  transform: rotate(-3deg);
+}
+
+.wave-dark {
+  top: 124px;
+  height: 240px;
+  background: rgba(5, 30, 88, 0.72);
+  transform: rotate(-4deg);
+}
+
+.footer-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 130px 56px 72px;
+}
+
+.site-footer h2 {
+  margin: 0 0 20px;
+  color: #fff;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.site-footer p,
+.site-footer address,
+.footer-links {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.45;
+}
+
+.site-footer a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-commitment,
+.footer-country {
+  max-width: 1080px;
+  margin-bottom: 48px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 72px;
+}
+
+.footer-links {
+  display: grid;
+  gap: 6px;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links a {
+  text-decoration: none;
+}
+
+.footer-grid strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #fff;
+  font-weight: 850;
+}
+
+.footer-grid address,
+.footer-grid p {
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.social-links a {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  color: #062b70;
+  background: #fff;
+  border-radius: 9px;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.social-links a:first-child {
+  border-radius: 999px;
+  font-family: Arial, sans-serif;
+  font-size: 34px;
+}

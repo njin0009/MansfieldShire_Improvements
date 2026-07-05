@@ -43,6 +43,15 @@
   .weather-metrics {
     grid-template-columns: 1fr 1fr;
   }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-inner {
+    padding: 120px 22px 56px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -115,5 +124,20 @@
 
   .tab-copy h3 {
     font-size: 24px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .site-footer h2 {
+    font-size: 25px;
+  }
+
+  .site-footer p,
+  .site-footer address,
+  .footer-links {
+    font-size: 16px;
   }
 }
