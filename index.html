@@ -53,42 +53,69 @@
         </h1>
         <p class="cover-date">Who we serve</p>
         <p class="scroll-hint">Residents, visitors, businesses and community</p>
-      </div>
-      <div class="cover-actions" aria-label="Homepage quick actions">
-        <form class="search" action="#" role="search">
-          <input aria-label="Search council services" placeholder="How can we help?">
-          <button aria-label="Search" type="submit">⌕</button>
-        </form>
-        <div class="cover-action-grid">
-          <a class="choice-card" href="#residents-title">
-            <span class="send-icon-wrap" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path fill="none" d="M0 0h24v24H0z"></path>
-                <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
-              </svg>
-            </span>
-            <strong>Residents</strong>
-          </a>
-          <a class="choice-card" href="#community-title">
-            <span class="send-icon-wrap" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path fill="none" d="M0 0h24v24H0z"></path>
-                <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
-              </svg>
-            </span>
-            <strong>Community</strong>
-          </a>
-          <a class="choice-card" href="#accessibility-panel" data-open-accessibility>
-            <span class="send-icon-wrap" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path fill="none" d="M0 0h24v24H0z"></path>
-                <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
-              </svg>
-            </span>
-            <strong>Accessibility</strong>
-          </a>
+        <div class="cover-title-actions" aria-label="Homepage quick actions">
+          <div class="cover-action-grid">
+            <a class="choice-card" href="#residents-title">
+              <span class="send-icon-wrap" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                </svg>
+              </span>
+              <strong>Residents</strong>
+            </a>
+            <a class="choice-card" href="#community-title">
+              <span class="send-icon-wrap" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                </svg>
+              </span>
+              <strong>Community</strong>
+            </a>
+            <a class="choice-card" href="#accessibility-panel" data-open-accessibility>
+              <span class="send-icon-wrap" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                </svg>
+              </span>
+              <strong>Accessibility</strong>
+            </a>
+          </div>
         </div>
       </div>
+      <aside class="weather-widget" aria-label="Current local weather" data-weather-widget>
+        <div class="weather-widget-top">
+          <div class="weather-widget-icon" data-weather-icon aria-hidden="true">
+            <span class="weather-sun"></span>
+          </div>
+          <button class="weather-widget-refresh" type="button" aria-label="Refresh weather" data-weather-refresh>↻</button>
+        </div>
+        <div class="weather-widget-body">
+          <strong data-weather-temp>--°</strong>
+          <span data-weather-city>Mansfield</span>
+          <small data-weather-time>Loading local weather</small>
+        </div>
+      </aside>
+      <aside class="question-guide" aria-label="Popular questions, search council services" data-question-guide>
+        <p class="question-guide-kicker">Need a hand?</p>
+        <h2 class="question-guide-title" data-question-guide-title>What's your question?</h2>
+        <form class="search" action="#" role="search" data-search-form>
+          <input
+            aria-label="Search council services"
+            placeholder="How can we help?"
+            autocomplete="off"
+            role="combobox"
+            aria-expanded="false"
+            aria-autocomplete="list"
+            aria-controls="search-suggestions"
+            data-search-input>
+          <button aria-label="Search" type="submit">⌕</button>
+          <ul class="search-suggestions" id="search-suggestions" role="listbox" data-search-suggestions hidden></ul>
+        </form>
+        <ol class="question-bubbles" data-question-bubbles></ol>
+      </aside>
     </div>
   </section>
 

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --navy: #062b70;
   --blue: #0f5fb8;

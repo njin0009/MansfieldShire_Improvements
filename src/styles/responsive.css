@@ -22,14 +22,31 @@
     padding: 92px 22px 190px;
   }
 
-  .cover-actions {
-    grid-template-columns: 1fr;
-    width: min(calc(var(--cover-media-width) - 36px), 620px);
-    top: calc(50% + (var(--cover-media-height) / 2) - 150px);
+  .weather-widget {
+    left: calc(50% + (var(--cover-media-width) / 2) - 302px);
+    top: calc(50% - (var(--cover-media-height) / 2) + 24px);
+    width: 260px;
+    padding: 13px;
   }
 
-  .cover-action-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .weather-widget-body strong {
+    font-size: 34px;
+  }
+
+  .question-guide {
+    left: calc(50% + (var(--cover-media-width) / 2) - 302px);
+    top: calc(50% - (var(--cover-media-height) / 2) + 170px);
+    width: 260px;
+    padding: 18px;
+  }
+
+  .question-guide-title {
+    font-size: 18px;
+  }
+
+  .question-guide .search {
+    height: 52px;
+    margin-bottom: 14px;
   }
 
   .hero-support {
@@ -116,28 +133,36 @@
   }
 
   .cover-title {
-    padding: 28px;
+    align-content: start;
+    padding: 186px 28px 28px;
   }
 
   .cover-stage {
     padding: 86px 18px 230px;
   }
 
+  .cover-title-actions {
+    width: min(320px, calc(var(--cover-media-width) - 56px));
+    margin-top: 34px;
+  }
+
   .cover-action-grid {
     grid-template-columns: 1fr;
   }
 
-  .cover-actions {
-    top: calc(50% + (var(--cover-media-height) / 2) - 174px);
-    width: min(calc(var(--cover-media-width) - 30px), 420px);
-  }
-
-  .cover-actions .search {
-    display: none;
-  }
-
-  .cover-actions .choice-card {
+  .cover-title-actions .choice-card {
     min-height: 46px;
+  }
+
+  .weather-widget {
+    left: 50%;
+    top: calc(50% - (var(--cover-media-height) / 2) + 22px);
+    width: min(calc(var(--cover-media-width) - 34px), 360px);
+    transform: translateX(-50%);
+  }
+
+  .question-guide {
+    display: none;
   }
 
   .tabs-panels {
