@@ -2,8 +2,8 @@ main {
   position: relative;
   z-index: 2;
   max-width: 1360px;
-  margin: -84px auto 0;
-  padding: 0 56px 70px;
+  margin: 0 auto;
+  padding: 56px 56px 70px;
 }
 
 .section {

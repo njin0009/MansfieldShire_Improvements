@@ -1,6 +1,8 @@
 .site-header {
-  position: sticky;
+  position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 10;
   display: flex;
   align-items: center;
@@ -8,9 +10,11 @@
   gap: 28px;
   min-height: 76px;
   padding: 0 56px;
-  background: rgba(255, 255, 255, 0.94);
-  border-bottom: 1px solid rgba(216, 228, 242, 0.9);
+  color: #fff;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(12px);
+  animation: header-drop 720ms ease both;
 }
 
 .accessibility-panel {
@@ -123,7 +127,7 @@
   align-items: center;
   gap: 12px;
   font-weight: 800;
-  color: var(--navy);
+  color: #fff;
   letter-spacing: 0;
 }
 
@@ -133,28 +137,49 @@
   height: 42px;
   place-items: center;
   color: #fff;
-  background: var(--navy);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   font-size: 20px;
   font-weight: 900;
+  backdrop-filter: blur(10px);
 }
 
 .nav {
   display: flex;
   align-items: center;
   gap: 22px;
-  color: #233452;
+  color: rgba(255, 255, 255, 0.82);
   font-size: 15px;
   font-weight: 650;
 }
 
 .nav a {
   padding: 10px 0;
+  transition: color 180ms ease;
+}
+
+.nav a:hover {
+  color: #fff;
 }
 
 .contact-pill {
-  padding: 11px 16px;
+  padding: 11px 16px !important;
   color: #fff;
-  background: var(--navy);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 999px;
+  backdrop-filter: blur(10px);
+}
+
+@keyframes header-drop {
+  from {
+    opacity: 0;
+    transform: translateY(-28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

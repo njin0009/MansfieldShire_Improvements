@@ -18,6 +18,14 @@ export function initAccessibilityPanel() {
     setAccessibilityExpanded(true);
   });
 
+  document.querySelectorAll("[data-open-accessibility]").forEach((trigger) => {
+    trigger.addEventListener("click", (event) => {
+      event.preventDefault();
+      setAccessibilityExpanded(true);
+      accessibilityPanel.scrollIntoView({ block: "nearest" });
+    });
+  });
+
   accessibilityClose.addEventListener("click", () => {
     setAccessibilityExpanded(false);
     accessibilityOpen.focus();
