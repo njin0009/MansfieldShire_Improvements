@@ -49,6 +49,19 @@
     margin-bottom: 14px;
   }
 
+  body.senior-mode .scroll-hint,
+  body.senior-mode .cover-date {
+    max-width: 400px;
+  }
+
+  body.senior-mode .cover-title-actions {
+    width: min(360px, calc(var(--cover-media-width) - 56px));
+  }
+
+  body.senior-mode .cover-action-grid {
+    grid-template-columns: 1fr;
+  }
+
   .hero-support {
     justify-self: stretch;
   }
@@ -135,6 +148,14 @@
   .cover-title {
     align-content: start;
     padding: 186px 28px 28px;
+  }
+
+  body.senior-mode .hero {
+    --cover-media-height: min(96vh, 780px) !important;
+  }
+
+  body.senior-mode .cover-title {
+    padding-top: 212px;
   }
 
   .cover-stage {

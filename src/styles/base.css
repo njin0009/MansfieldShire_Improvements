@@ -44,18 +44,32 @@ body.senior-mode .quick-card p,
 body.senior-mode .journey-list a,
 body.senior-mode .question-link,
 body.senior-mode .weather-copy strong,
-body.senior-mode .local-weather span {
+body.senior-mode .local-weather span,
+body.senior-mode .weather-widget-body span,
+body.senior-mode .weather-widget-body small,
+body.senior-mode .search-suggestion {
   font-size: 1.15em !important;
   line-height: 1.65 !important;
 }
 
-body.senior-mode h1 {
-  font-size: 56px !important;
-  white-space: normal;
+body.senior-mode .eyebrow,
+body.senior-mode .scroll-hint,
+body.senior-mode .question-guide-kicker,
+body.senior-mode .question-text {
+  font-size: 1.1em !important;
+  line-height: 1.35 !important;
+}
+
+body.senior-mode .cover-title h1 {
+  font-size: clamp(52px, 7.4vw, 96px) !important;
 }
 
 body.senior-mode .section h2 {
   font-size: 34px !important;
+}
+
+body.senior-mode .question-guide-title {
+  font-size: 24px !important;
 }
 
 body.senior-mode .quick-card h3,

@@ -125,24 +125,24 @@
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
   font-weight: 800;
   color: #fff;
   letter-spacing: 0;
 }
 
-.brand-mark {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  font-size: 20px;
-  font-weight: 900;
-  backdrop-filter: blur(10px);
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 16px;
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.brand-logo img {
+  display: block;
+  width: auto;
+  height: 34px;
 }
 
 .nav {
