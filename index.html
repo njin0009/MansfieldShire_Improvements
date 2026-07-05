@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mansfield Shire Council - Homepage UX Concept</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <aside class="accessibility-panel" aria-labelledby="accessibility-title" id="accessibility-panel">
+    <button class="accessibility-toggle" type="button" id="accessibility-open" aria-expanded="false" aria-controls="accessibility-content">Accessibility</button>
+    <div class="accessibility-content" id="accessibility-content">
+      <div class="accessibility-header">
+        <h2 id="accessibility-title">Accessibility</h2>
+        <button class="accessibility-close" type="button" id="accessibility-close" aria-label="Close accessibility controls">×</button>
+      </div>
+      <div class="accessibility-tools">
+        <button type="button" data-toggle-class="senior-mode" aria-pressed="false">Senior mode</button>
+        <button type="button" id="audio-guide-toggle" aria-pressed="false">Audio guide</button>
+        <button type="button" data-toggle-class="high-contrast" aria-pressed="false">Contrast</button>
+        <button type="button" data-toggle-class="reduce-motion" aria-pressed="false">Less motion</button>
+      </div>
+    </div>
+  </aside>
+
+  <header class="site-header">
+    <a class="brand" href="#">
+      <span class="brand-mark">M</span>
+      <span>Mansfield Shire Council</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#">Community</a>
+      <a href="#">Business</a>
+      <a href="#">Plan & Build</a>
+      <a href="#">Council</a>
+      <a class="contact-pill" href="#">Contact Council</a>
+    </nav>
+  </header>
+
+  <section class="hero" aria-labelledby="page-title">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true" poster="">
+      <source src="/src/assets/video/animated_morning_valley.mp4" type="video/mp4">
+    </video>
+    <div class="hero-inner">
+      <div class="welcome-card">
+        <p class="eyebrow">Welcome to</p>
+        <h1 id="page-title">Mansfield Shire Council</h1>
+        <p class="site-purpose">For residents and community members to get Council tasks done, find trusted local information, and take part in local decisions.</p>
+        <div class="local-snapshot" aria-label="Local location and weather">
+          <div class="weather-main">
+            <span class="weather-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M7.5 18h9.25a4.25 4.25 0 0 0 .42-8.48A6.25 6.25 0 0 0 5.2 10.1 4 4 0 0 0 7.5 18Z" fill="currentColor" opacity="0.88"></path>
+              </svg>
+              <span class="rain-drop"></span>
+              <span class="rain-drop"></span>
+              <span class="rain-drop"></span>
+            </span>
+            <div class="weather-copy">
+              <small>Your local area</small>
+              <strong>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 21s7-5.4 7-12a7 7 0 1 0-14 0c0 6.6 7 12 7 12Z" stroke="currentColor" stroke-width="2"></path>
+                  <path d="M12 12.2a2.8 2.8 0 1 0 0-5.6 2.8 2.8 0 0 0 0 5.6Z" stroke="currentColor" stroke-width="2"></path>
+                </svg>
+                Mansfield Shire, Victoria
+              </strong>
+            </div>
+          </div>
+          <div class="local-weather">9°C <span>Light rain</span></div>
+          <a class="weather-refresh" href="#" aria-label="Refresh local weather">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M20 11a8 8 0 0 0-14.4-4.8L4 8m0 0V3m0 5h5m-5 5a8 8 0 0 0 14.4 4.8L20 16m0 0v5m0-5h-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="quick-start" aria-label="Quick start by audience">
+          <p class="quick-start-label">Quick start</p>
+          <div class="audience-choice">
+            <a class="choice-card" href="#residents-title">
+              <span class="send-icon-wrap" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                </svg>
+              </span>
+              <strong>Residents</strong>
+            </a>
+            <a class="choice-card" href="#community-title">
+              <span class="send-icon-wrap" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                </svg>
+              </span>
+              <strong>Community</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-support" aria-label="High priority support links">
+        <form class="search" action="#" role="search">
+          <input aria-label="Search council services" placeholder="How can we help?">
+          <button aria-label="Search" type="submit">⌕</button>
+        </form>
+        <strong>Need help quickly?</strong>
+        <p>Start from the question that sounds closest to what you need.</p>
+        <div class="support-actions">
+          <a class="question-link" href="#"><span>When is my bin collected?</span><span aria-hidden="true">→</span></a>
+          <a class="question-link" href="#"><span>How do I report a local issue?</span><span aria-hidden="true">→</span></a>
+          <a class="question-link" href="#"><span>How do I pay rates or fees?</span><span aria-hidden="true">→</span></a>
+          <a class="question-link" href="#"><span>What should I do in an emergency?</span><span aria-hidden="true">→</span></a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <main id="main-content">
+    <section class="section residents" aria-labelledby="residents-title">
+      <div class="section-header">
+        <div>
+          <h2 id="residents-title">For Residents</h2>
+          <p>Everyday Council tasks, made easier.</p>
+        </div>
+        <a class="view-all" href="#">View resident services</a>
+      </div>
+
+      <div class="quick-grid">
+        <a class="quick-card" href="#">
+          <span class="card-media image-media" aria-hidden="true">
+            <img src="/src/assets/images/report-issue.png" alt="">
+          </span>
+          <div class="card-body">
+            <h3>Report an Issue</h3>
+            <p>Tell Council about roads, trees, drainage, animals, or public spaces.</p>
+          </div>
+        </a>
+        <a class="quick-card" href="#">
+          <span class="card-media image-media" aria-hidden="true">
+            <img src="/src/assets/images/pay-apply.png" alt="">
+          </span>
+          <div class="card-body">
+            <h3>Pay & Apply</h3>
+            <p>Pay rates, invoices, registrations, permits, or start a form.</p>
+          </div>
+        </a>
+        <a class="quick-card" href="#">
+          <span class="card-media image-media" aria-hidden="true">
+            <img src="/src/assets/images/bin-day.png" alt="">
+          </span>
+          <div class="card-body">
+            <h3>Bin Day</h3>
+            <p>Check your next collection day and which bin goes out.</p>
+          </div>
+        </a>
+        <a class="quick-card" href="#">
+          <span class="card-media image-media" aria-hidden="true">
+            <img src="/src/assets/images/waste.png" alt="">
+          </span>
+          <div class="card-body">
+            <h3>Waste</h3>
+            <p>Request a new, damaged, missing, or missed bin service.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section community" aria-labelledby="community-title">
+      <div class="section-header">
+        <div>
+          <h2 id="community-title">For Community</h2>
+          <p>Stay informed, participate, and connect.</p>
+        </div>
+        <a class="view-all" href="#">Explore community</a>
+      </div>
+
+      <div class="quick-grid">
+        <a class="quick-card" href="#">
+          <span class="card-media image-media" aria-hidden="true">
+            <img src="/src/assets/images/bushfire.png" alt="">
+          </span>
+          <div class="card-body">
+            <h3>Bushfire</h3>
+            <p>Find emergency updates, preparation advice, and recovery support.</p>
+          </div>
+        </a>
+        <a class="quick-card" href="#">
+          <span class="card-media image-media" aria-hidden="true">
+            <img src="/src/assets/images/meetings.png" alt="">
+          </span>
+          <div class="card-body">
+            <h3>Meetings</h3>
+            <p>See Council meetings, agendas, minutes, and decisions.</p>
+          </div>
+        </a>
+        <a class="quick-card" href="#">
+          <span class="card-media image-media" aria-hidden="true">
+            <img src="/src/assets/images/have-your-say.png" alt="">
+          </span>
+          <div class="card-body">
+            <h3>Have Your Say</h3>
+            <p>Share feedback on local projects, plans, and policies.</p>
+          </div>
+        </a>
+        <a class="quick-card" href="#">
+          <span class="card-media image-media" aria-hidden="true">
+            <img src="/src/assets/images/news-events.png" alt="">
+          </span>
+          <div class="card-body">
+            <h3>News & Events</h3>
+            <p>Catch up on Council updates and what is happening nearby.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <div class="content-row">
+      <aside class="journey-card" aria-labelledby="journey-title">
+        <h2 id="journey-title">Other common pathways</h2>
+        <ul class="journey-list">
+          <li><a href="#">Build or renovate <span>→</span></a></li>
+          <li><a href="#">Register a pet <span>→</span></a></li>
+          <li><a href="#">Book a community space <span>→</span></a></li>
+          <li><a href="#">Career opportunities <span>→</span></a></li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

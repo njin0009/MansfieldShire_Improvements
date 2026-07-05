@@ -1,0 +1,69 @@
+@media (max-width: 980px) {
+  .site-header {
+    padding: 0 22px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    padding: 46px 22px 120px;
+  }
+
+  .hero-support {
+    justify-self: stretch;
+  }
+
+  main {
+    padding: 0 22px 48px;
+  }
+
+  .quick-grid,
+  .content-row,
+  .audience-choice {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .weather-metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 39px;
+    white-space: normal;
+  }
+
+  .welcome-card,
+  .section,
+  .weather-card,
+  .journey-card {
+    padding: 22px;
+    border-radius: 18px;
+  }
+
+  .section-header,
+  .weather-top {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .local-snapshot {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .local-weather {
+    text-align: left;
+  }
+
+  .quick-grid,
+  .content-row,
+  .weather-metrics,
+  .audience-choice {
+    grid-template-columns: 1fr;
+  }
+}
