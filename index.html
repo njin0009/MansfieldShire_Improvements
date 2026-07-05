@@ -39,9 +39,7 @@
   </header>
 
   <section class="hero" aria-labelledby="page-title">
-    <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true" poster="">
-      <source src="/src/assets/video/animated_morning_valley.mp4" type="video/mp4">
-    </video>
+    <img class="hero-media" src="/src/assets/images/mansfield-banner.jpg" alt="" aria-hidden="true">
     <div class="hero-inner">
       <div class="welcome-card">
         <p class="eyebrow">Welcome to</p>
@@ -217,15 +215,171 @@
     </section>
 
     <div class="content-row">
-      <aside class="journey-card" aria-labelledby="journey-title">
-        <h2 id="journey-title">Other common pathways</h2>
-        <ul class="journey-list">
-          <li><a href="#">Build or renovate <span>→</span></a></li>
-          <li><a href="#">Register a pet <span>→</span></a></li>
-          <li><a href="#">Book a community space <span>→</span></a></li>
-          <li><a href="#">Career opportunities <span>→</span></a></li>
-        </ul>
-      </aside>
+      <section class="insight-tabs" aria-labelledby="insight-title">
+        <div class="insight-tabs-header">
+          <div>
+            <p class="eyebrow">Explore Mansfield Shire</p>
+            <h2 id="insight-title">Latest from Council and community</h2>
+          </div>
+          <div class="tabs-list" role="tablist" aria-label="Council updates">
+            <button class="tab-button active" type="button" role="tab" id="tab-news" aria-selected="true" aria-controls="panel-news" data-tab="news">Latest News and Updates</button>
+            <button class="tab-button" type="button" role="tab" id="tab-engagement" aria-selected="false" aria-controls="panel-engagement" data-tab="engagement" tabindex="-1">Community Engagement</button>
+            <button class="tab-button" type="button" role="tab" id="tab-discover" aria-selected="false" aria-controls="panel-discover" data-tab="discover" tabindex="-1">Discover Mansfield Shire</button>
+          </div>
+        </div>
+
+        <div class="tabs-panels">
+          <article class="tab-panel active" role="tabpanel" id="panel-news" aria-labelledby="tab-news" data-panel="news">
+            <div class="tab-carousel" data-carousel>
+              <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev aria-label="Previous news item">&lsaquo;</button>
+              <button class="carousel-button carousel-button-next" type="button" data-carousel-next aria-label="Next news item">&rsaquo;</button>
+              <div class="tab-slide active" data-slide>
+                <img src="/src/assets/images/news-events.png" alt="Council news and local updates">
+                <div class="tab-copy">
+                  <span class="tab-kicker">Published 3 July 2026</span>
+                  <h3>Council Adopts 2026-2027 Budget</h3>
+                  <p>The adopted budget focuses on infrastructure and services needed for a growing shire, alongside current updates on local facilities, roads and community priorities.</p>
+                  <ul>
+                    <li>Sporting Wall of Fame to celebrate Mansfield's sporting heritage</li>
+                    <li>Council votes to close High Street Service Road</li>
+                    <li>Community satisfaction rises to decade high</li>
+                  </ul>
+                  <a class="tab-link" href="https://www.mansfield.vic.gov.au/community/news">See all news <span>→</span></a>
+                </div>
+              </div>
+              <div class="tab-slide" data-slide hidden>
+                <img src="/src/assets/images/meetings.png" alt="Council meeting update">
+                <div class="tab-copy">
+                  <span class="tab-kicker">Council update</span>
+                  <h3>Sporting Wall of Fame to celebrate Mansfield's sporting heritage</h3>
+                  <p>Twelve accomplished local athletes will feature on a new mural at Mansfield Sporting Complex after community nominations and Council endorsement.</p>
+                  <ul>
+                    <li>Celebrates sporting talent across Mansfield Shire</li>
+                    <li>Selections endorsed at the June ordinary meeting</li>
+                    <li>New public recognition at the sporting complex</li>
+                  </ul>
+                  <a class="tab-link" href="https://www.mansfield.vic.gov.au/community/news">Read latest updates <span>→</span></a>
+                </div>
+              </div>
+              <div class="tab-slide" data-slide hidden>
+                <img src="/src/assets/images/report-issue.png" alt="Local service road update">
+                <div class="tab-copy">
+                  <span class="tab-kicker">Local roads</span>
+                  <h3>Council votes to close High Street Service Road</h3>
+                  <p>The closure at the Apollo Street end was agreed at the 30 June Ordinary Meeting following extensive community engagement on the proposal.</p>
+                  <ul>
+                    <li>Decision follows community consultation</li>
+                    <li>Focus on local movement and safety</li>
+                    <li>Part of ongoing township planning updates</li>
+                  </ul>
+                  <a class="tab-link" href="https://www.mansfield.vic.gov.au/community/news">View news page <span>→</span></a>
+                </div>
+              </div>
+              <div class="carousel-dots" aria-label="Latest news position" data-carousel-dots></div>
+            </div>
+          </article>
+
+          <article class="tab-panel" role="tabpanel" id="panel-engagement" aria-labelledby="tab-engagement" data-panel="engagement" hidden>
+            <div class="tab-carousel" data-carousel>
+              <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev aria-label="Previous engagement item">&lsaquo;</button>
+              <button class="carousel-button carousel-button-next" type="button" data-carousel-next aria-label="Next engagement item">&rsaquo;</button>
+              <div class="tab-slide active" data-slide>
+                <img src="/src/assets/images/have-your-say.png" alt="Community members sharing feedback">
+                <div class="tab-copy">
+                  <span class="tab-kicker">Have your say</span>
+                  <h3>Community Engagement Policy</h3>
+                  <p>Share feedback on how Council listens, communicates and involves the community in decisions that affect Mansfield Shire.</p>
+                  <ul>
+                    <li>Current project open for community feedback</li>
+                    <li>Supports clearer consultation standards</li>
+                    <li>Helps shape future engagement practice</li>
+                  </ul>
+                  <a class="tab-link" href="https://www.mansfield.vic.gov.au/community-engagement">See all projects <span>→</span></a>
+                </div>
+              </div>
+              <div class="tab-slide" data-slide hidden>
+                <img src="/src/assets/images/waste.png" alt="Flood risk and waterway planning">
+                <div class="tab-copy">
+                  <span class="tab-kicker">Current project</span>
+                  <h3>Mansfield Flood Study</h3>
+                  <p>Community knowledge can help Council better understand local flood risk and improve planning for future resilience.</p>
+                  <ul>
+                    <li>Tell Council what you know about flood risk</li>
+                    <li>Support safer land-use and emergency planning</li>
+                    <li>Follow updates as the study progresses</li>
+                  </ul>
+                  <a class="tab-link" href="https://www.mansfield.vic.gov.au/community-engagement">View current projects <span>→</span></a>
+                </div>
+              </div>
+              <div class="tab-slide" data-slide hidden>
+                <img src="/src/assets/images/bushfire.png" alt="Landscape planning in Mansfield Shire">
+                <div class="tab-copy">
+                  <span class="tab-kicker">Past project</span>
+                  <h3>Delatite Valley Plan</h3>
+                  <p>The Delatite Valley Plan captures what the community values about this unique place and how its future should be managed.</p>
+                  <ul>
+                    <li>Reflects local priorities and landscape values</li>
+                    <li>Connects consultation with future planning</li>
+                    <li>Available alongside other past projects</li>
+                  </ul>
+                  <a class="tab-link" href="https://www.mansfield.vic.gov.au/community-engagement">Explore consultations <span>→</span></a>
+                </div>
+              </div>
+              <div class="carousel-dots" aria-label="Community engagement position" data-carousel-dots></div>
+            </div>
+          </article>
+
+          <article class="tab-panel" role="tabpanel" id="panel-discover" aria-labelledby="tab-discover" data-panel="discover" hidden>
+            <div class="tab-carousel" data-carousel>
+              <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev aria-label="Previous discovery item">&lsaquo;</button>
+              <button class="carousel-button carousel-button-next" type="button" data-carousel-next aria-label="Next discovery item">&rsaquo;</button>
+              <div class="tab-slide active" data-slide>
+                <img src="/src/assets/images/visitor-information-centre.jpg" alt="Mansfield Visitor Information Centre">
+                <div class="tab-copy">
+                  <span class="tab-kicker">Visitor information</span>
+                  <h3>Visit the Mansfield Visitor Information Centre</h3>
+                  <p>Ask friendly local staff for places to visit, activities, travel ideas and where to eat and drink.</p>
+                  <ul>
+                    <li>Local advice for visitors and residents</li>
+                    <li>Trip planning, events and activity ideas</li>
+                    <li>Gateway to High Country experiences</li>
+                  </ul>
+                  <a class="tab-link" href="https://www.mansfield.vic.gov.au/">Plan your visit <span>→</span></a>
+                </div>
+              </div>
+              <div class="tab-slide" data-slide hidden>
+                <img src="/src/assets/images/mansfield-banner.jpg" alt="High Country, lakes and rivers">
+                <div class="tab-copy">
+                  <span class="tab-kicker">High Country</span>
+                  <h3>High Country, Lakes and Rivers</h3>
+                  <p>Discover the scenery that defines Mansfield Shire, from open valleys and mountain views to waterways and quiet local trails.</p>
+                  <ul>
+                    <li>Scenic drives and day trips</li>
+                    <li>Lakes, rivers and outdoor recreation</li>
+                    <li>Seasonal views across the shire</li>
+                  </ul>
+                  <a class="tab-link" href="https://www.mansfield.vic.gov.au/">Discover more <span>→</span></a>
+                </div>
+              </div>
+              <div class="tab-slide" data-slide hidden>
+                <img src="/src/assets/images/mtbuller-snow.jpg" alt="Outdoor activities around Mansfield Shire">
+                <div class="tab-copy">
+                  <span class="tab-kicker">Explore outside</span>
+                  <h3>Explore the best of Mansfield Shire</h3>
+                  <p>From the Botanical Gardens to the Rail Trail, Mansfield Shire gives visitors and locals plenty of ways to spend time outdoors.</p>
+                  <ul>
+                    <li>Botanical Gardens and open spaces</li>
+                    <li>Rail Trail and walking routes</li>
+                    <li>Food, wine and local hospitality nearby</li>
+                  </ul>
+                  <a class="tab-link" href="https://www.mansfieldmtbuller.com.au/">Explore activities <span>→</span></a>
+                </div>
+              </div>
+              <div class="carousel-dots" aria-label="Discover Mansfield position" data-carousel-dots></div>
+            </div>
+          </article>
+        </div>
+      </section>
     </div>
   </main>
 

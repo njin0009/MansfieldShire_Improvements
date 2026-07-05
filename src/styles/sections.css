@@ -265,32 +265,285 @@ main {
   font-size: 17px;
 }
 
-.journey-card h2 {
-  margin: 0 0 12px;
-  color: var(--navy);
-  font-size: 24px;
+.insight-tabs {
+  position: relative;
+  overflow: hidden;
+  padding: 26px;
+  color: #fff;
+  background:
+    linear-gradient(135deg, rgba(6, 43, 112, 0.95), rgba(16, 65, 93, 0.86)),
+    url("/src/assets/images/mansfield-banner.jpg") center / cover;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 22px;
+  box-shadow: var(--soft-shadow);
 }
 
-.journey-list {
-  display: grid;
-  gap: 12px;
+.insight-tabs:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(255, 255, 255, 0.2), transparent 26%),
+    linear-gradient(90deg, rgba(5, 25, 63, 0.24), rgba(5, 25, 63, 0.58));
+  pointer-events: none;
+}
+
+.insight-tabs > * {
+  position: relative;
+  z-index: 1;
+}
+
+.insight-tabs-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 14px;
+}
+
+.insight-tabs .eyebrow {
+  margin: 0 0 8px;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.insight-tabs h2 {
   margin: 0;
+  color: #fff;
+  font-size: 28px;
+}
+
+.tabs-list {
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 5px;
+  background: rgba(17, 17, 17, 0.48);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 14px;
+  backdrop-filter: blur(14px);
+}
+
+.tab-button {
+  position: relative;
+  padding: 10px 13px;
+  color: rgba(255, 255, 255, 0.82);
+  background: transparent;
+  border: 0;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.tab-button:hover,
+.tab-button:focus-visible {
+  color: #fff;
+  outline: none;
+}
+
+.tab-button.active {
+  color: #fff;
+  background: rgba(17, 17, 17, 0.82);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+}
+
+.tabs-panels {
+  position: relative;
+  min-height: 300px;
+  padding: 16px;
+  background: rgba(17, 17, 17, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(16px);
+}
+
+.tab-panel {
+  position: relative;
+  animation: tab-panel-in 420ms ease both;
+}
+
+.tab-panel[hidden] {
+  display: none;
+}
+
+.tab-carousel {
+  position: relative;
+  padding: 0 56px 34px;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 3;
+  display: grid;
+  top: 50%;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 999px;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(12px);
+  font: inherit;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 1;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.carousel-button-prev {
+  left: -40px;
+}
+
+.carousel-button-next {
+  right: -40px;
+}
+
+.carousel-button:hover,
+.carousel-button:focus-visible {
+  background: rgba(255, 255, 255, 0.24);
+  outline: none;
+  transform: translateY(-50%) scale(1.04);
+}
+
+.carousel-dots {
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  transform: translateX(-50%);
+}
+
+.carousel-dot {
+  width: 11px;
+  height: 11px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.38);
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 180ms ease, width 180ms ease;
+}
+
+.carousel-dot.active {
+  width: 34px;
+  background: #fff;
+}
+
+.tab-slide {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) 1fr;
+  gap: 22px;
+  align-items: stretch;
+  animation: tab-panel-in 420ms ease both;
+}
+
+.tab-slide[hidden] {
+  display: none;
+}
+
+.tab-slide img {
+  width: 100%;
+  min-height: 280px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.26);
+}
+
+.tab-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: 8px 4px;
+}
+
+.tab-kicker {
+  color: #a8d6ff;
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.tab-copy h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+.tab-copy p {
+  margin: 0;
+  max-width: 620px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 16px;
+  line-height: 1.58;
+}
+
+.tab-copy ul {
+  display: grid;
+  gap: 8px;
+  margin: 4px 0 0;
   padding: 0;
   list-style: none;
 }
 
-.journey-list a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  padding: 14px 16px;
-  color: var(--navy);
-  background: var(--ice);
-  border-radius: 14px;
-  font-weight: 800;
+.tab-copy li {
+  position: relative;
+  padding-left: 18px;
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: 700;
 }
 
-.journey-list span {
+.tab-copy li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 7px;
+  height: 7px;
+  background: #8fc7ff;
+  border-radius: 999px;
+}
+
+.tab-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin-top: 8px;
+  padding: 11px 14px;
+  color: var(--navy);
+  background: #fff;
+  border-radius: 999px;
+  font-weight: 850;
+}
+
+.tab-link span {
   color: var(--blue);
+}
+
+@keyframes tab-panel-in {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-10px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0) scale(1);
+  }
 }

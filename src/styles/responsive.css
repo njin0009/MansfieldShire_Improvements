@@ -26,6 +26,20 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .insight-tabs-header,
+  .tab-slide {
+    grid-template-columns: 1fr;
+  }
+
+  .insight-tabs-header {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .tabs-list {
+    width: 100%;
+  }
+
   .weather-metrics {
     grid-template-columns: 1fr 1fr;
   }
@@ -40,7 +54,8 @@
   .welcome-card,
   .section,
   .weather-card,
-  .journey-card {
+  .journey-card,
+  .insight-tabs {
     padding: 22px;
     border-radius: 18px;
   }
@@ -65,5 +80,40 @@
   .weather-metrics,
   .audience-choice {
     grid-template-columns: 1fr;
+  }
+
+  .tabs-panels {
+    padding: 12px;
+  }
+
+  .tab-carousel {
+    padding: 0 0 34px;
+  }
+
+  .carousel-button {
+    width: 42px;
+    height: 42px;
+    font-size: 28px;
+  }
+
+  .carousel-button-prev {
+    left: 8px;
+  }
+
+  .carousel-button-next {
+    right: 8px;
+  }
+
+  .tab-button {
+    width: 100%;
+    text-align: left;
+  }
+
+  .tab-slide img {
+    min-height: 210px;
+  }
+
+  .tab-copy h3 {
+    font-size: 24px;
   }
 }
